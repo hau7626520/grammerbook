@@ -77,11 +77,6 @@ function renderNavigation(currentPage) {
         footerContent.className = 'mt-auto pt-4 text-xs text-slate-400 px-2 italic text-center';
         footerContent.innerHTML = `
             (更多章節建置中)
-            <div class="mt-4">
-                <a href="https://hits.dwyl.com/hau7626520/grammarbook.github.io">
-                    <img src="https://hits.dwyl.com/hau7626529/grammarbook.github.io.svg?style=flat-square&show=unique" alt="Hits">
-                </a>
-            </div>
         `;
         placeholder.appendChild(footerContent);
 
