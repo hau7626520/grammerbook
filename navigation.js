@@ -14,7 +14,7 @@ const NAV_HTML_CONTENT = `
                 <li><a href="1-1-2.html" class="flex items-center gap-3 px-4 py-1 text-sm {active_1_1_2} text-slate-600 hover:bg-slate-50 transition"><span class="w-1.5 h-1.5 rounded-full bg-slate-300"></span><span class="nav-text">2. 主詞 (Subjects)</span></a></li>
                 <li><a href="1-1-3.html" class="flex items-center gap-3 px-4 py-1 text-sm {active_1_1_3} text-slate-600 hover:bg-slate-50 transition"><span class="w-1.5 h-1.5 rounded-full bg-slate-300"></span><span class="nav-text">3. 述語 (Predicates)</span></a></li>
                 <li><a href="1-1-4.html" class="flex items-center gap-3 px-4 py-1 text-sm {active_1_1_4} text-slate-600 hover:bg-slate-50 transition"><span class="w-1.5 h-1.5 rounded-full bg-slate-300"></span><span class="nav-text">4. 主詞補語 (Subject Complements)</span></a></li>
-                <li><a href="#" class="flex items-center gap-3 px-4 py-1 text-sm text-slate-600 hover:bg-slate-50 transition"><span class="w-1.5 h-1.5 rounded-full bg-slate-300"></span><span class="nav-text">5. 受詞 (Objects)</span></a></li>
+                <li><a href="1-1-5.html" class="flex items-center gap-3 px-4 py-1 text-sm {active_1_1_5} text-slate-600 hover:bg-slate-50 transition"><span class="w-1.5 h-1.5 rounded-full bg-slate-300"></span><span class="nav-text">5. 受詞 (Objects)</span></a></li>
             </ul>
         </div>
     </div>
@@ -63,6 +63,7 @@ function renderNavigation(currentPage) {
     navContent = navContent.replace('{active_1_1_2}', currentPage === '1-1-2.html' ? activeClass : 'hover:bg-slate-50');
     navContent = navContent.replace('{active_1_1_3}', currentPage === '1-1-3.html' ? activeClass : 'hover:bg-slate-50');
     navContent = navContent.replace('{active_1_1_4}', currentPage === '1-1-4.html' ? activeClass : 'hover:bg-slate-50');
+    navContent = navContent.replace('{active_1_1_5}', currentPage === '1-1-5.html' ? activeClass : 'hover:bg-slate-50');
 
     const navElement = document.createElement('nav');
     navElement.className = 'flex-1 overflow-y-auto sidebar-scroll p-4';
